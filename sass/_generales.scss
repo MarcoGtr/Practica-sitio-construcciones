@@ -1,0 +1,31 @@
+@import 'variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $fuente;
+  font-weight: $regular;
+  font-size: 1rem;
+  box-sizing: border-box;
+  &::selection {
+    background: $amarillo;
+    color: $azulOscuro;
+  }
+}
+
+.titulo {
+  display: inline-flex;
+  flex-direction: column;
+  h2 {
+    font-size: 3rem;
+    font-weight: $bold;
+    color: $azulOscuro;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .decorador {
+    height: 10px;
+    width: 100px;
+    background: $amarillo;
+  }
+}
